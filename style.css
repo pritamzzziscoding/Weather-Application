@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(222, 254, 255);
+}
+
+.box{
+    padding: 30px;
+    border-radius: 1rem;
+    display: inline-block;
+    background: rgb(3,247,203);
+    background: linear-gradient(90deg, rgba(3,247,203,1) 0%, rgba(29,248,253,1) 48%, rgba(0,242,239,1) 100%);
+}
+
+.misc-img{
+    height: 50px;
+    width: 50px;
+}
+
+.centering{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1{
+    padding: 10px;
+    color: #0d2038;
+}
+
+h3{
+    text-align: left;
+    color: #0d2038;
+    margin-bottom: 10px;
+}
+.container{
+    height: 80%;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+input{
+    border: 0px;
+    height: 40px;
+    width: 200px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 500;
+    outline: none;
+}
+
+.btn{
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 0px;
+    background-color: orange;
+    font-weight: 500;
+    --bs-btn-border-radius: 0px;
+    border-top-right-radius: 10px !important; 
+    border-bottom-right-radius: 10px !important; 
+}
+
+.loca{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #214979;
+}
+
+.main-img{
+    height: 120px;
+    width: 120px;
+}
+
+.temperature{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #214979;
+}
+
+.actual-feel{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #214979;
+}
+
+.humidity,.wind{
+    font-weight: 500;
+    color: #214979;
+}
