@@ -31,6 +31,8 @@ const humidity = document.querySelector(".humidity");
 const main_img = document.querySelector(".main-img");
 const button = document.querySelector("button");
 const input = document.querySelector("input");
+const description = document.querySelector(".description");
+let body = document.querySelector("body");
 
 const update = async (city)=>{
     if(city == ""){
@@ -48,7 +50,7 @@ const update = async (city)=>{
         wind.innerText = data.wind.speed + " km/hr";
         humidity.innerText = data.main.humidity +"%";
         main_img.src = imgUrl + imgData[data.weather[0].icon];
-        console.log(data.weather[0].icon);
+        description.innerText = data.weather[0].main;
     }
 }
 
@@ -57,5 +59,11 @@ button.addEventListener("click", ()=>{
     update(city);
 });
 
+body.addEventListener("keydown", (type)=>{
+    if(type.key == 'Enter'){
+        city = input.value;
+        update(city);
+    }
+});
 
 update(city);
