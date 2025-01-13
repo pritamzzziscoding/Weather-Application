@@ -22,7 +22,6 @@ const imgData = {
 let city = "Delhi";
 let imgUrl = "./image/";
 
-
 const loca = document.querySelector(".loca");
 const temperature = document.querySelector(".temperature");
 const actual_feel = document.querySelector(".actual-feel");
